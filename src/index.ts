@@ -27,7 +27,7 @@ app.use(
   })
 );
 
-app.all("/api/auth/*splat", toNodeHandler(auth));
+app.all("/api/auth/*splat", toNodeHandler(auth)); // Mount Handler To Better Auth
 
 app.use(express.json());
 
